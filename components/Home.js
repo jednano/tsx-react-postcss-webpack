@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import BaseBody from './BaseBody';
 
-// import Foo from './Foo';
+import Foo from './Foo';
 
 export default React.createClass({
     displayName: 'HomeBundle',
@@ -16,7 +16,7 @@ export default React.createClass({
                         <a href="/ts">Click for TypeScript Route</a>
                     </li>
                 </ul>
-                {/* <Foo bar="thud" /> */}
+                <Foo bar="thud" />
             </BaseBody>
         );
     }
