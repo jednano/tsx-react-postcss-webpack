@@ -16,7 +16,7 @@
   },
   "include": [
     "api-clients/**/*.ts",
-    // "browser-mains/**/*.ts",
+    "browser-mains/**/*.ts",
     "components/**/*.ts",
     "components/**/*.tsx",
     "config/**/*.ts",
