@@ -1,0 +1,5 @@
+{
+  "title": "Ts",
+  "styles": ["/public/css/ts.css"],
+  "scripts": ["/public/js/ts-main.js"]
+}

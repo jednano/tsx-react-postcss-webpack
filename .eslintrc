@@ -1,0 +1,41 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "dot-notation": 2,
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "jsx-quotes": 2,
+        "new-cap": 0,
+        "no-process-exit": 2,
+        "no-use-before-define": [2, "nofunc"],
+        "no-var": 2,
+        "object-shorthand": [2, "methods"],
+        "prefer-const": 2,
+        "quotes": [2, "single", "avoid-escape"],
+        "strict": [2, "never"],
+        "react/jsx-boolean-value": 2,
+        "react/jsx-sort-props": 0,
+        "react/sort-prop-types": 2,
+        "react/no-did-mount-set-state": 2,
+        "react/no-did-update-set-state": 2,
+        "react/no-multi-comp": 0,
+        "react/react-in-jsx-scope": 2,
+        "react/self-closing-comp": 2,
+        "react/jsx-wrap-multilines": 2
+    }
+}

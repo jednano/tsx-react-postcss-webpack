@@ -1,0 +1,5 @@
+{
+  "title": "Site",
+  "styles": ["/public/css/global.css"],
+  "scripts": ["/public/js/lib.js"]
+}

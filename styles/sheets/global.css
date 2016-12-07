@@ -1,0 +1,14 @@
+@import normalize;
+@import reset;
+
+html {
+    font: 14px arial;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    @link-colors all #016d91 {
+        hover: #16829e;
+    }
+}

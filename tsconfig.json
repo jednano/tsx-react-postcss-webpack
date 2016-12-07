@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "module": "commonjs",
+    "newLine": "LF",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "include": [
+    "api-clients/**/*.ts",
+    // "browser-mains/**/*.ts",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "config/**/*.ts",
+    "redux-app/**/*.ts",
+    "router/**/*.ts",
+    "server/**/*.ts",
+    "styles/config/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "typeAcquisition": {
+    "enable": true,
+    "exclude": [
+      "classnames",
+      "jasmine",
+      "lodash",
+      "react",
+      "react-dom"
+    ]
+  }
+}

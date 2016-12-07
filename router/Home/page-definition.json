@@ -1,0 +1,5 @@
+{
+  "title": "Home",
+  "styles": ["/public/css/home.css"],
+  "scripts": ["/public/js/home-main.js"]
+}
