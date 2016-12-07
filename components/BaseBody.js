@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { propTypes, t } from 'tcomb-react';
 
 const BaseBody = React.createClass({

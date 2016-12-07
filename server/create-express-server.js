@@ -1,6 +1,6 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
+import * as express from 'express';
+import * as bodyParser from 'body-parser';
+import * as cookieParser from 'cookie-parser';
 import errorHandlingMiddleware from '../server/error-handling-middleware';
 
 export default function createExpressServer({

@@ -1,5 +1,5 @@
-import slashes from 'connect-slashes';
-import Router from 'express';
+import * as slashes from 'connect-slashes';
+import * as Router from 'express';
 
 import createHomePageHandler from './Home';
 // import createTsPageHandler from './Ts';

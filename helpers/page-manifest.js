@@ -8,7 +8,7 @@ import {
     isNil,
     isPlainObject
 } from 'lodash';
-import t from 'tcomb';
+import * as t from 'tcomb';
 
 const StringList = t.list(t.String);
 
@@ -57,25 +57,7 @@ export function mergeDefinitionObject(base, ...definitions) {
 }
 
 export function createPageManifestHandler(base, ...definitions) {
-    return () => createDeviceManifest(new PageDefinition(
+    return () => new PageManifest(
         mergeDefinitionObject(base, ...definitions)
-    ));
-}
-
-function createDeviceManifest(pageDefinition) {
-    const {
-        initialState,
-        meta,
-        scripts,
-        styles,
-        title
-    } = pageDefinition;
-
-    return new PageManifest({
-        initialState,
-        meta,
-        scripts,
-        styles,
-        title
-    });
+    );
 }

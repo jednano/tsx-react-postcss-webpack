@@ -11,7 +11,6 @@ export default function createHomePageHandler({ request, clientConfig }) {
             pageDefinition,
             clientConfig,
             pathName: '/',
-            promises: [],
             component: HomeBundle
         }).then(({
             htmlBody

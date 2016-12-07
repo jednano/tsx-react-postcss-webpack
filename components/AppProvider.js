@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import * as React from 'react';
 import { Provider } from 'react-redux';
 import { propTypes, t } from 'tcomb-react';
 
@@ -21,7 +21,7 @@ export default React.createClass({
 
         return (
             <Provider store={ store }>
-                { Children.only(children) }
+                { React.Children.only(children) }
             </Provider>
         );
     }

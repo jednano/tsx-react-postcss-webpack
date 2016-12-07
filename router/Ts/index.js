@@ -11,7 +11,6 @@ export default function createTsPageHandler({ request, clientConfig }) {
             pageDefinition,
             clientConfig,
             pathName: '/',
-            promises: [],
             component: TsBundle
         }).then(({
             htmlBody
