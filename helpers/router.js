@@ -22,11 +22,11 @@ export function responseCreatorPromise({
         req: pickRequestProperties(config.req || {})
     });
 
-    return(config.routes ? reactRouterPromiseChain : promiseChain)(params);
+    return (config.routes ? reactRouterPromiseChain : promiseChain)(params);
 }
 
 function pickRequestProperties(req) {
-    return pick(req, ['device', 'headers', 'url']);
+    return pick(req, ['headers', 'url']);
 }
 
 export function promiseAttempt(func) {

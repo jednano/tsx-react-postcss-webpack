@@ -1,5 +1,5 @@
 import { responseCreator } from '../pageHelpers';
-import pageDefinition from './page-definition.json';
+import * as pageDefinition from './page-definition.json';
 
 import HomeBundle from '../../components/Home';
 
