@@ -1,4 +1,5 @@
 import * as React from 'react';
+import classnames from 'classnames';
 
 import BaseBody from './BaseBody';
 
@@ -10,8 +11,10 @@ export default React.createClass({
     render() {
         return (
             <BaseBody>
-                <div className="home">
-                    <h1>TypeScript/React/Webpack Starter</h1>
+                <div className={classnames('home')}>
+                    <h1>
+                        TypeScript/React/Webpack Starter
+                    </h1>
                     <ul>
                         <li>
                             <a href="/ts">Click for TypeScript Route</a>
