@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { createMemoryHistory, match, RouterContext } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -15,8 +15,6 @@ import BasePage from '../components/BasePage';
 export function responseCreatorPromise({
     config,
     pageDefinitionBase,
-    getPromises,
-    getStateFromPromise,
     promiseChain = creatorPromiseChain
 } = {}) {
     const params = assign({}, config, {
@@ -24,13 +22,11 @@ export function responseCreatorPromise({
         req: pickRequestProperties(config.req || {})
     });
 
-    return getPromises(params)
-        .then(getStateFromPromise)
-        .then(config.routes ? reactRouterPromiseChain : promiseChain);
+    return (config.routes ? reactRouterPromiseChain : promiseChain)(params);
 }
 
 function pickRequestProperties(req) {
-    return pick(req, ['device', 'headers', 'url']);
+    return pick(req, ['headers', 'url']);
 }
 
 export function promiseAttempt(func) {

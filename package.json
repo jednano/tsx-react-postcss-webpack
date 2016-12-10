@@ -6,7 +6,7 @@
     "check": "eslint . && echo NO_LINT_ERRORS",
     "test": "karma start --single-run --reporters dots,coverage,threshold,junit",
     "watch": "karma start --reporters dots,coverage",
-    "start": "set NODE_ENV=development&& set PORT=8080&& babel-node ./server.js"
+    "start": "set NODE_ENV=development&& set PORT=8080&& ts-node ./boot.ts"
   },
   "babel": {
     "presets": [
@@ -106,7 +106,8 @@
     "source-map-loader": "0.1.5",
     "style-loader": "0.13.0",
     "ts-loader": "1.3.0",
-    "typescript": "2.0.10",
+    "ts-node": "1.7.0",
+    "typescript": "2.2.0-dev.20161207",
     "webpack": "1.12.14",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"

@@ -1,11 +1,11 @@
 import { noop } from 'lodash';
 import { join } from 'path';
-import postcssNested from 'postcss-nested';
+import * as postcssNested from 'postcss-nested';
 import postcssNestedProps from 'postcss-nested-props';
-import postcssPropertyLookup from 'postcss-property-lookup';
+import * as postcssPropertyLookup from 'postcss-property-lookup';
 
-import variables from './vars.json';
-import fonts from './fonts.json';
+import * as variables from './vars.json';
+import * as fonts from './fonts.json';
 
 const browsers = [
     'last 2 versions',
@@ -53,7 +53,9 @@ export default function createPostcssProcessors(options) {
                     }
                 })
             ],
-            onImport: options.hot ? files => files.forEach(this.addDependency) : noop
+            onImport: options.hot
+                ? files => files.forEach(this.addDependency)
+                : noop
         }),
         require('postcss-url'),
         require('postcss-sprites')({

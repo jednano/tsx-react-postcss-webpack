@@ -1,4 +1,4 @@
-import t from 'tcomb';
+import * as t from 'tcomb';
 
 export const Global = t.struct({
     foo: t.String

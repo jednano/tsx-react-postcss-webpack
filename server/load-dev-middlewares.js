@@ -1,11 +1,11 @@
 import { lstat } from 'fs';
 import { EOL } from 'os';
 import { join } from 'path';
-import webpack from 'webpack';
-import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
+import * as webpack from 'webpack';
+import * as webpackDevMiddleware from 'webpack-dev-middleware';
+import * as webpackHotMiddleware from 'webpack-hot-middleware';
 
-import config from '../webpack.config.dev';
+import * as config from '../webpack.config.dev';
 
 export default function loadDevMiddlewares({ app }) {
 

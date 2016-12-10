@@ -1,19 +1,19 @@
-import React from 'react';
+import * as React from 'react';
 import { propTypes, t } from 'tcomb-react';
 
 export default React.createClass({
 
     displayName: 'BasePage',
 
-    propTypes: propTypes({
+    propTypes: propTypes(t.struct({
         title: t.String,
         scripts: t.Array,
         styles: t.Array,
         children: t.ReactChildren,
         initialState: t.Object
-    }),
+    }, 'BasePageProps')),
 
-    getDefaultProps: () => {
+    getDefaultProps() {
         return {
             scripts: [],
             styles: []

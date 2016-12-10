@@ -2,7 +2,7 @@ var _ = require('lodash');
 var webpack = require('webpack');
 var glob = require('glob');
 var path = require('path');
-var productionConfig = require('./webpack.config.js');
+var productionConfig = require('./webpack.config');
 var createPostcssProcessors = require('./styles/config/postcss-processors');
 
 var babelConfig = require('./package').babel;
